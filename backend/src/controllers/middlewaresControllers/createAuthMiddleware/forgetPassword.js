@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 const checkAndCorrectURL = require('./checkAndCorrectURL');
 const sendMail = require('./sendMail');
 const shortid = require('shortid');
-const { loadSettings } = require('@/middlewares/settings');
 
 const { useAppSettings } = require('@/settings');
 
@@ -64,7 +63,7 @@ const forgetPassword = async (req, res, { userModel }) => {
     email,
     name: user.name,
     link,
-    subject: 'Reset your password | idurar',
+    subject: 'Reset your password | CustFlow',
     idurar_app_email,
     type: 'passwordVerfication',
   });

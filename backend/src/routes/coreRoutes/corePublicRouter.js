@@ -3,8 +3,6 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 
-// Without middleware
-
 router.route('/:subPath/:directory/:file').get(function (req, res) {
   try {
     const { subPath, directory, file } = req.params;

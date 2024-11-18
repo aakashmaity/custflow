@@ -5,7 +5,7 @@ import { Button, Drawer, Layout, Menu } from 'antd';
 import { useAppContext } from '@/context/appContext';
 
 import useLanguage from '@/locale/useLanguage';
-import logoIcon from '@/style/images/logo-icon.svg';
+import logoIcon from '@/style/images/logo-icon.png';
 import logoText from '@/style/images/logo-text.svg';
 
 import useResponsive from '@/hooks/useResponsive';
@@ -16,14 +16,9 @@ import {
   ContainerOutlined,
   FileSyncOutlined,
   DashboardOutlined,
-  TagOutlined,
-  TagsOutlined,
-  UserOutlined,
   CreditCardOutlined,
   MenuOutlined,
-  FileOutlined,
   ShopOutlined,
-  FilterOutlined,
   WalletOutlined,
   ReconciliationOutlined,
 } from '@ant-design/icons';
@@ -151,7 +146,7 @@ function Sidebar({ collapsible, isMobile = false }) {
           cursor: 'pointer',
         }}
       >
-        <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '40px' }} />
+        <img src={logoIcon} alt="Logo" style={{ marginLeft: '-5px', height: '62px' }} />
 
         {!showLogoApp && (
           <img
@@ -160,7 +155,7 @@ function Sidebar({ collapsible, isMobile = false }) {
             style={{
               marginTop: '3px',
               marginLeft: '10px',
-              height: '38px',
+              height: '58px',
             }}
           />
         )}

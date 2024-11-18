@@ -8,7 +8,7 @@ const About = () => {
     <Result
       status="info"
       title={'CUSTFLOW'}
-      subTitle={translate('Do you need help on customize of this app')}
+      subTitle={translate('Do you need help on customize of this app ?')}
       extra={
         <>
           <p>
@@ -20,14 +20,6 @@ const About = () => {
           exceptional customer support, ensuring seamless implementation, and helping our clients 
           unlock their full potential with a comprehensive ERP solution tailored to their unique needs.
           </p>
-          <Button
-            type="primary"
-            onClick={() => {
-              window.open(`https://www.idurarapp.com/contact-us/`);
-            }}
-          >
-            {translate('Contact us')}
-          </Button>
         </>
       }
     />

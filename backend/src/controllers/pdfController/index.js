@@ -2,8 +2,7 @@ const pug = require('pug');
 const fs = require('fs');
 const moment = require('moment');
 let pdf = require('html-pdf');
-const { listAllSettings, loadSettings } = require('@/middlewares/settings');
-const { getData } = require('@/middlewares/serverData');
+const { loadSettings } = require('@/middlewares/settings');
 const useLanguage = require('@/locale/useLanguage');
 const { useMoney, useDate } = require('@/settings');
 
@@ -67,13 +66,11 @@ exports.generatePdf = async (
         moment: moment,
       });
 
-      pdf
-        .create(htmlContent, {
+      pdf.create(htmlContent, {
           format: info.format,
           orientation: 'portrait',
           border: '10mm',
-        })
-        .toFile(targetLocation, function (error) {
+        }).toFile(targetLocation, function (error) {
           if (error) throw new Error(error);
           if (callback) callback();
         });

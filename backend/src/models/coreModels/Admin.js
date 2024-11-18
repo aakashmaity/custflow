@@ -33,5 +33,4 @@ const adminSchema = new Schema({
     enum: ['owner'],
   },
 });
-
 module.exports = mongoose.model('Admin', adminSchema);
