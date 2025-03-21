@@ -127,6 +127,7 @@ export default function DashboardModule() {
   if (money_format_settings) {
     return (
       <>
+        {/* Invoice, Quotes, Paid, Unpaid */}
         <Row gutter={[32, 32]}>
           <SummaryCard
             title={translate('Invoices')}
@@ -171,6 +172,10 @@ export default function DashboardModule() {
           </Col>
         </Row>
         <div className="space30"></div>
+
+
+
+        {/* Recent Invoice and Quotes  */}
         <Row gutter={[32, 32]}>
           <Col className="gutter-row w-full" sm={{ span: 24 }} lg={{ span: 12 }}>
             <div className="whiteBox shadow pad20" style={{ height: '100%' }}>

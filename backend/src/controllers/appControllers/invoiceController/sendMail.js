@@ -1,5 +1,6 @@
-const fs = require('fs');
+// Implement - sendMail functionality
 
+const fs = require('fs');
 const mongoose = require('mongoose');
 
 const mail = async (req, res) => {

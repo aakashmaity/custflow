@@ -1,3 +1,6 @@
+// Login Page - Left Sidebar Content with image
+
+
 import { Layout, Typography } from 'antd';
 import logo from '@/style/images/logo.svg';
 const { Content } = Layout;

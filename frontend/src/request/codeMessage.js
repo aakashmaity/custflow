@@ -1,3 +1,5 @@
+// Status code
+
 const codeMessage = {
   200: 'The server successfully returned the requested data. ',
   201: 'Create or modify data successfully. ',

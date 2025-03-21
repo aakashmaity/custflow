@@ -1,16 +1,18 @@
-import { Avatar, Popover, Button, Badge, Col, List } from 'antd';
+// My Profile dropdown menu - Upgrade to pro version button
 
+
+import { Avatar, Popover, Button, Badge, Col, List, notification } from 'antd';
 // import Notifications from '@/components/Notification';
-
 import { RocketOutlined } from '@ant-design/icons';
-
 import useLanguage from '@/locale/useLanguage';
+
+
 
 export default function UpgradeButton() {
   const translate = useLanguage();
 
   return (
-    <Badge count={1} size="small">
+    <Badge count={0} size="small">
       <Button
         type="primary"
         style={{
@@ -18,19 +20,23 @@ export default function UpgradeButton() {
           marginTop: '5px',
           cursor: 'pointer',
           background: '#16923e',
+          fontSize: '13px',
           boxShadow: '0 2px 0 rgb(82 196 26 / 20%)',
         }}
         icon={<RocketOutlined />}
         onClick={() => {
-          window.open(`https://cloud.idurarapp.com`);
+          notification.open({
+            message: 'CustFlow',
+            description: 'CustFlow is a new version of the CRM software. We are working on it now. Please wait for the release.',
+          })
         }}
       >
-        {translate('Try Entreprise Version')}
+        {translate('Upgrade to Pro version')}
       </Button>
     </Badge>
   );
 }
 
 console.log(
-  '🚀 Welcome to IDURAR ERP CRM! Did you know that we also offer commercial customization services? Contact us at hello@idurarapp.com for more information.'
+  '🚀 Welcome to CustFlow ERP CRM! Did you know that we also offer commercial customization services? Contact us at hello@custflow.com for more information.'
 );

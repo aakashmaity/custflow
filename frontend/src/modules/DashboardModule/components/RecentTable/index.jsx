@@ -1,3 +1,5 @@
+// Dashboard - Recent Invoice/Quotes Table
+
 import { Dropdown, Table } from 'antd';
 
 import { request } from '@/request';

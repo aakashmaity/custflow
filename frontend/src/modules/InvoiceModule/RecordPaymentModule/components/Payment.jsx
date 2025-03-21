@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
+// Invoice Record Payment - right side + right side layout
 
+
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import useLanguage from '@/locale/useLanguage';
 import { Button, Row, Col, Descriptions, Tag, Divider } from 'antd';
 import { PageHeader } from '@ant-design/pro-layout';
 import { FileTextOutlined, CloseCircleOutlined } from '@ant-design/icons';
-
 import { generate as uniqueId } from 'shortid';
 
 import { useMoney } from '@/settings';
-
 import RecordPayment from './RecordPayment';
-import useLanguage from '@/locale/useLanguage';
 
-import { useNavigate } from 'react-router-dom';
 
 export default function Payment({ config, currentItem }) {
   const translate = useLanguage();
@@ -44,6 +44,9 @@ export default function Payment({ config, currentItem }) {
   return (
     <>
       <Row gutter={[12, 12]}>
+
+
+        {/* right panel client invoice details */}
         <Col
           className="gutter-row"
           xs={{ span: 24 }}
@@ -126,7 +129,7 @@ export default function Payment({ config, currentItem }) {
             </Descriptions.Item>
           </Descriptions>
         </Col>
-
+              
         <Col
           className="gutter-row"
           xs={{ span: 24, order: 1 }}

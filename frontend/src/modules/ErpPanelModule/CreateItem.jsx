@@ -1,28 +1,22 @@
-import { useState, useEffect } from 'react';
+// new entity creation form page (invoice/quotes)
 
+
+import { useState, useEffect } from 'react';
 import { Button, Tag, Form, Divider } from 'antd';
 import { PageHeader } from '@ant-design/pro-layout';
-
-import { useSelector, useDispatch } from 'react-redux';
-
 import useLanguage from '@/locale/useLanguage';
+import { generate as uniqueId } from 'shortid';
+import Loading from '@/components/Loading';
+import { useSelector, useDispatch } from 'react-redux';
+import { ArrowLeftOutlined, ArrowRightOutlined, CloseCircleOutlined, PlusOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 
 import { settingsAction } from '@/redux/settings/actions';
 import { erp } from '@/redux/erp/actions';
 import { selectCreatedItem } from '@/redux/erp/selectors';
-
 import calculate from '@/utils/calculate';
-import { generate as uniqueId } from 'shortid';
 
-import Loading from '@/components/Loading';
-import {
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CloseCircleOutlined,
-  PlusOutlined,
-} from '@ant-design/icons';
 
-import { useNavigate } from 'react-router-dom';
 
 function SaveForm({ form }) {
   const translate = useLanguage();

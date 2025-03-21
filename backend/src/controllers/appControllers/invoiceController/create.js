@@ -1,7 +1,7 @@
+// Responsible for creating a new invoice
+
 const mongoose = require('mongoose');
-
 const Model = mongoose.model('Invoice');
-
 const { calculate } = require('@/helpers');
 const { increaseBySettingKey } = require('@/middlewares/settings');
 const schema = require('./schemaValidate');

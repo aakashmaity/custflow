@@ -1,10 +1,12 @@
+// Invoice Record Payment page component
+
+
 import React from 'react';
 import dayjs from 'dayjs';
 import { Form, Input, InputNumber } from 'antd';
 import { DatePicker } from 'antd';
 import SelectAsync from '@/components/SelectAsync';
 import { useMoney, useDate } from '@/settings';
-
 import useLanguage from '@/locale/useLanguage';
 
 export default function PaymentForm({ maxAmount = null, isUpdateForm = false }) {

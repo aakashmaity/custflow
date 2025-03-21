@@ -1,14 +1,14 @@
 import React from 'react';
-
-import useLanguage from '@/locale/useLanguage';
-
 import { Switch } from 'antd';
 import { CloseOutlined, CheckOutlined } from '@ant-design/icons';
+import useLanguage from '@/locale/useLanguage';
+
 import CrudModule from '@/modules/CrudModule/CrudModule';
 import TaxForm from '@/forms/TaxForm';
 
 export default function Taxes() {
   const translate = useLanguage();
+
   const entity = 'taxes';
   const searchConfig = {
     displayLabels: ['name'],
@@ -36,6 +36,7 @@ export default function Taxes() {
       dataIndex: 'enabled',
     },
   ];
+  
   const dataTableColumns = [
     {
       title: translate('Name'),

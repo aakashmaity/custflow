@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const moment = require('moment');
-
 const Model = mongoose.model('Invoice');
-
 const { loadSettings } = require('@/middlewares/settings');
 
 const summary = async (req, res) => {

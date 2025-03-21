@@ -1,18 +1,17 @@
-import NotFound from '@/components/NotFound';
+// Invoice tabel - 'Edit' dropdown menu item - to update invoice
+// Layout page
 
-import { ErpLayout } from '@/layout';
-import UpdateItem from '@/modules/ErpPanelModule/UpdateItem';
-import InvoiceForm from '@/modules/InvoiceModule/Forms/InvoiceForm';
-
-import PageLoader from '@/components/PageLoader';
-
-import { erp } from '@/redux/erp/actions';
-
-import { selectReadItem } from '@/redux/erp/selectors';
 import { useLayoutEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import NotFound from '@/components/NotFound';
+import { ErpLayout } from '@/layout';
+import PageLoader from '@/components/PageLoader';
 
+import UpdateItem from '@/modules/ErpPanelModule/UpdateItem';
+import InvoiceForm from '@/modules/InvoiceModule/Forms/InvoiceForm';
+import { erp } from '@/redux/erp/actions';
+import { selectReadItem } from '@/redux/erp/selectors';
 import { settingsAction } from '@/redux/settings/actions';
 
 export default function UpdateInvoiceModule({ config }) {

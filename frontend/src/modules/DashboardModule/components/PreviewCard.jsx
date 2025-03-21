@@ -1,3 +1,5 @@
+// Dashboard - Bar graph Invoice & Quotes
+
 import { useMemo } from 'react';
 import { Col, Progress, Spin } from 'antd';
 import useLanguage from '@/locale/useLanguage';
@@ -10,7 +12,7 @@ const colours = {
   overdue: '#ff4d4f',
   partially: '#13c2c2',
   paid: '#95de64',
-  declined: '#ff4d4f',
+  declined: '#ff4d1f',
   accepted: '#95de64',
   cyan: '#13c2c2',
   purple: '#722ed1',
@@ -81,8 +83,8 @@ const PreviewState = ({ tag, value }) => {
         percent={value}
         showInfo={false}
         strokeColor={{
-          '0%': '#333',
-          '100%': '#333',
+          '0%': `${colours[tag]}`,
+          '100%': `${colours[tag]}`,
         }}
       />
     </div>

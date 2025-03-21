@@ -1,3 +1,6 @@
+// Invoice Record Payment page 
+// From dropdown 'Record Payment' is selected
+
 import useLanguage from '@/locale/useLanguage';
 import RecordPaymentModule from '@/modules/InvoiceModule/RecordPaymentModule';
 

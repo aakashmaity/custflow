@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
+// Login page - Form content 
 
+
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
 import useLanguage from '@/locale/useLanguage';
-
 import { Form, Button } from 'antd';
 
 import { login } from '@/redux/auth/actions';

@@ -1,3 +1,5 @@
+// New Invoice Create Page
+
 import useLanguage from '@/locale/useLanguage';
 import CreateInvoiceModule from '@/modules/InvoiceModule/CreateInvoiceModule';
 

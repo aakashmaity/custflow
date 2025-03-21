@@ -1,3 +1,5 @@
+// Dashboard - Invoice/Quote/Paid/Unpaid  Summary card
+
 import { Tag, Divider, Row, Col, Spin, Tooltip } from 'antd';
 import { useMoney } from '@/settings';
 import { selectMoneyFormat } from '@/redux/settings/selectors';

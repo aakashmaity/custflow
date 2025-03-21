@@ -1,15 +1,15 @@
+// Invoice Record Payment page - Form 
+
 import { useState, useEffect } from 'react';
 import { Form, Button } from 'antd';
-
+import { useNavigate } from 'react-router-dom';
+import Loading from '@/components/Loading';
 import { useSelector, useDispatch } from 'react-redux';
-import { erp } from '@/redux/erp/actions';
-import { selectRecordPaymentItem } from '@/redux/erp/selectors';
 import useLanguage from '@/locale/useLanguage';
 
-import Loading from '@/components/Loading';
-
+import { erp } from '@/redux/erp/actions';
+import { selectRecordPaymentItem } from '@/redux/erp/selectors';
 import PaymentForm from '@/forms/PaymentForm';
-import { useNavigate } from 'react-router-dom';
 import calculate from '@/utils/calculate';
 
 export default function RecordPayment({ config }) {

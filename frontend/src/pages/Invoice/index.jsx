@@ -1,3 +1,5 @@
+// Invoice home page
+
 import dayjs from 'dayjs';
 import { Tag } from 'antd';
 import useLanguage from '@/locale/useLanguage';

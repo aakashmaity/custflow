@@ -1,17 +1,15 @@
-import { useEffect } from 'react';
+// Reset password page
 
+
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Form, Button } from 'antd';
+import useLanguage from '@/locale/useLanguage';
 
 import { resetPassword } from '@/redux/auth/actions';
 import { selectAuth } from '@/redux/auth/selectors';
-
-import { Form, Button } from 'antd';
-
 import ResetPasswordForm from '@/forms/ResetPasswordForm';
-
-import useLanguage from '@/locale/useLanguage';
-
 import Loading from '@/components/Loading';
 import AuthModule from '@/modules/AuthModule';
 

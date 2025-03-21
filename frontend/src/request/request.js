@@ -1,3 +1,6 @@
+// API call for different functions
+
+
 import axios from 'axios';
 import { API_BASE_URL } from '@/config/serverApiConfig';
 

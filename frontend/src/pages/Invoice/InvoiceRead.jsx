@@ -1,3 +1,6 @@
+// Invoice Read page 
+// From dropdown 'show' is selected
+
 import useLanguage from '@/locale/useLanguage';
 import ReadInvoiceModule from '@/modules/InvoiceModule/ReadInvoiceModule';
 

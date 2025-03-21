@@ -1,21 +1,19 @@
+// Forget password page - add email and send a mail to reset password
+
 import { useNavigate } from 'react-router-dom';
-
 import { Form, Result, Button } from 'antd';
-import useOnFetch from '@/hooks/useOnFetch';
-import { request } from '@/request';
-
-import ForgetPasswordForm from '@/forms/ForgetPasswordForm';
-
 import useLanguage from '@/locale/useLanguage';
 
+import useOnFetch from '@/hooks/useOnFetch';
+import { request } from '@/request';
+import ForgetPasswordForm from '@/forms/ForgetPasswordForm';
 import Loading from '@/components/Loading';
 import AuthModule from '@/modules/AuthModule';
 
+
 const ForgetPassword = () => {
   const translate = useLanguage();
-
   const navigate = useNavigate();
-
   const { onFetch, isSuccess, isLoading } = useOnFetch();
 
   async function postData(data) {

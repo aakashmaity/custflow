@@ -1,3 +1,6 @@
+// Dashboard - Customer Preview Card in the New Month
+
+
 import { Statistic, Progress, Divider, Row, Spin } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import useLanguage from '@/locale/useLanguage';

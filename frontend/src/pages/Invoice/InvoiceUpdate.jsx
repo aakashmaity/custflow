@@ -1,3 +1,5 @@
+// Invoice update page
+
 import useLanguage from '@/locale/useLanguage';
 import UpdateInvoiceModule from '@/modules/InvoiceModule/UpdateInvoiceModule';
 

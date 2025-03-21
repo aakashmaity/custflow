@@ -1,3 +1,5 @@
+// For Export all the functions of the invoiceController
+
 const createCRUDController = require('@/controllers/middlewaresControllers/createCRUDController');
 const methods = createCRUDController('Invoice');
 

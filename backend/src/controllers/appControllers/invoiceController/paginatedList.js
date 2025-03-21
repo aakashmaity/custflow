@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const Model = mongoose.model('Invoice');
 
 const paginatedList = async (req, res) => {

@@ -1,5 +1,6 @@
-import { notification } from 'antd';
+// successHandler: this function is used in request.js
 
+import { notification } from 'antd';
 import codeMessage from './codeMessage';
 
 const successHandler = (response, options = { notifyOnSuccess: false, notifyOnFailed: true }) => {

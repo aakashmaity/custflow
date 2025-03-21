@@ -1,3 +1,6 @@
+// Popup notification for error handling show different messege based on the error type
+
+
 import { notification } from 'antd';
 import codeMessage from './codeMessage';
 

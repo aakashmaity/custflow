@@ -1,28 +1,22 @@
+// Read/Show single invoice & quote details component( send mail , download)
+// Invoice/Quote Read Page
+
 import { useState, useEffect } from 'react';
 import { Divider } from 'antd';
-
 import { Button, Row, Col, Descriptions, Statistic, Tag } from 'antd';
 import { PageHeader } from '@ant-design/pro-layout';
-import {
-  EditOutlined,
-  FilePdfOutlined,
-  CloseCircleOutlined,
-  RetweetOutlined,
-  MailOutlined,
-} from '@ant-design/icons';
-
+import { EditOutlined, FilePdfOutlined, CloseCircleOutlined, RetweetOutlined, MailOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import useLanguage from '@/locale/useLanguage';
 import { erp } from '@/redux/erp/actions';
-
 import { generate as uniqueId } from 'shortid';
 
 import { selectCurrentItem } from '@/redux/erp/selectors';
-
 import { DOWNLOAD_BASE_URL } from '@/config/serverApiConfig';
 import { useMoney, useDate } from '@/settings';
 import useMail from '@/hooks/useMail';
-import { useNavigate } from 'react-router-dom';
+
 
 const Item = ({ item, currentErp }) => {
   const { moneyFormatter } = useMoney();

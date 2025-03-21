@@ -1,7 +1,11 @@
+// Delete Item Component pop-up
+// From dropdown menu, user can delete item
+
+
 import { useEffect, useState } from 'react';
 import { Modal } from 'antd';
-
 import { useDispatch, useSelector } from 'react-redux';
+
 import { erp } from '@/redux/erp/actions';
 import { useErpContext } from '@/context/erp';
 import { selectDeletedItem } from '@/redux/erp/selectors';

@@ -1,6 +1,9 @@
+// Logout functionality - reset everything and navigate to login page
+
 import { useEffect, useLayoutEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+
 import { logout as logoutAction } from '@/redux/auth/actions';
 import { crud } from '@/redux/crud/actions';
 import { erp } from '@/redux/erp/actions';

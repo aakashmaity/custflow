@@ -1,3 +1,5 @@
+// Responsiveness - Mobile, Desktop view
+
 import { useLayoutEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Layout } from 'antd';
