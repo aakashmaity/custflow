@@ -1,15 +1,15 @@
-// Dashboard - Left side Navigation menu
+// Dashboard - Left side Navigation menu for the application 
+// Mobile / Desktop
 
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Button, Drawer, Layout, Menu } from 'antd';
-
-import { useAppContext } from '@/context/appContext';
-
 import useLanguage from '@/locale/useLanguage';
 import logoIcon from '@/style/images/logo-icon.png';
 import logoText from '@/style/images/logo-text.svg';
+
+import { useAppContext } from '@/context/appContext';
 import useResponsive from '@/hooks/useResponsive';
 
 import {

@@ -1,4 +1,5 @@
-// Responsiveness - Mobile, Desktop view
+// Layout Responsiveness - Mobile, Desktop view
+// Navigation 
 
 import { useLayoutEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -41,6 +42,7 @@ export default function ErpCrmApp() {
   if (settingIsloaded)
     return (
       <Layout hasSider>
+
         <Navigation />
 
         {isMobile ? (

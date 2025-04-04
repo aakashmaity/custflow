@@ -1,4 +1,4 @@
-exports.SendInvoice = ({ title = 'Invoice from Idurar', name = '', time = new Date() }) => {
+exports.SendInvoice = ({ title = 'Invoice from CustFlow', name = '', time = new Date() }) => {
   return `
     <div>
 
