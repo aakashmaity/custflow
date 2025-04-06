@@ -52,10 +52,10 @@ const forgetPassword = async (req, res, { userModel }) => {
   ).exec();
 
   const settings = useAppSettings();
-  const idurar_app_email = settings['idurar_app_email'];
-  const idurar_base_url = settings['idurar_base_url'];
+  const custflow_app_email = settings['custflow_app_email'];
+  const custflow_base_url = settings['custflow_base_url'];
 
-  const url = checkAndCorrectURL(idurar_base_url);
+  const url = checkAndCorrectURL(custflow_base_url);
 
   const link = url + '/resetpassword/' + user._id + '/' + resetToken;
 
@@ -64,7 +64,7 @@ const forgetPassword = async (req, res, { userModel }) => {
     name: user.name,
     link,
     subject: 'Reset your password | CustFlow',
-    idurar_app_email,
+    custflow_app_email,
     type: 'passwordVerfication',
   });
 

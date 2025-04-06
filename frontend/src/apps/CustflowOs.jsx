@@ -19,7 +19,7 @@ const DefaultApp = () => (
   </Localization>
 );
 
-export default function IdurarOs() {
+export default function CustflowOs() {
   const { isLoggedIn } = useSelector(selectAuth);
 
   console.log(

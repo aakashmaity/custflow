@@ -1,5 +1,5 @@
 {
-  "name": "idurar-erp-crm",
+  "name": "custflow-erp-crm",
   "version": "4.1.0",
   "engines": {
     "npm": "10.2.4",
@@ -49,15 +49,15 @@
     "@": "src"
   },
   "main": "server.js",
-  "author": "IDURAR",
-  "email": "hello@idurarapp.com",
+  "author": "CUSTFLOW",
+  "email": "support@custflowapp.com",
   "license": "Fair-code License",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idurar/idurar-erp-crm/.git"
+    "url": "git+https://github.com/aakashmaity/custflow.git"
   },
   "bugs": {
-    "url": "https://github.com/idurar/idurar-erp-crm//issues"
+    "url": "https://github.com/aakashmaity/custflow/issues"
   },
-  "homepage": "https://github.com/idurar/idurar-erp-crm/#readme"
+  "homepage": "https://github.com/aakashmaity/custflow/#readme"
 }
