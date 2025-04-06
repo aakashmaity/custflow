@@ -1,11 +1,52 @@
+@import './theme.css';
 @import './partials/rest.css';
 @import './partials/customAntd.css';
+@import './partials/darkTheme.css';
 @import './partials/layout.css';
 @import './partials/core.css';
-
 @import './partials/auth.css';
 @import './partials/navigation.css';
 @import './partials/header.css';
 @import './partials/sidePanel.css';
 @import './partials/collapseBox.css';
 @import './partials/erp.css';
+
+/* App specific styles */
+.App {
+  text-align: center;
+  background: var(--bg-primary);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-light);
+}
