@@ -276,6 +276,7 @@ const request = {
 
   mail: async ({ entity, jsonData }) => {
     try {
+      // console.log("Json data: ",jsonData)
       includeToken();
       const response = await axios.post(entity + '/mail/', jsonData);
       successHandler(response, {

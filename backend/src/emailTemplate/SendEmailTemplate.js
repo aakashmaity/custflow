@@ -1,4 +1,4 @@
-exports.SendInvoice = ({ title = 'Invoice from Custflow', name = '', time = new Date() }) => {
+exports.SendInvoice = ({ title = 'Invoice from Custflow', name = '', time = new Date() , jsondata}) => {
   return `
     <div>
 
@@ -11,8 +11,10 @@ exports.SendInvoice = ({ title = 'Invoice from Custflow', name = '', time = new 
 
         <body data-id="__react-email-body">
             <h2 data-id="react-email-heading">${title}</h2>
+
             <hr data-id="react-email-hr" style="width:100%;border:none;border-top:1px solid #eaeaea" />
             <p data-id="react-email-text" style="font-size:14px;line-height:24px;margin:16px 0">Hello ${name},</p>
+            <p data-id="react-email-text" style="font-size:14px;line-height:24px;margin:16px 0">Hello ${jsondata?.total},</p>
             <p data-id="react-email-text" style="font-size:14px;line-height:24px;margin:16px 0">Here&#x27;s the invoice you requested at ${time}</p>
         </body>
     </div>

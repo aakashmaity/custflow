@@ -1,210 +1,22 @@
-@import '../theme.css';
-
-/* Layout */
 .ant-layout {
-  background: var(--bg-primary) !important;
-  color: var(--text-primary);
+  background: #ffffff !important;
 }
-
 .site-layout .site-layout-background {
-  background: var(--bg-secondary);
+  background: #fff;
+}
+[data-theme='dark'] .site-layout .site-layout-background {
+  background: #141414;
 }
 
-/* Header and Navigation */
-.ant-layout-header {
-  background: var(--bg-secondary) !important;
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: var(--card-shadow);
-}
-
-.ant-menu {
-  background: var(--bg-secondary) !important;
-  border-right: 1px solid var(--border-color);
-}
-
-.ant-menu-item {
-  height: 36px !important;
-  color: var(--text-secondary) !important;
-  transition: var(--transition);
-  border-radius: 4px;
-  margin: 4px 8px !important;
-}
-
-.ant-menu-item:hover {
-  color: var(--text-primary) !important;
-  background: var(--bg-hover) !important;
-}
-
-.ant-menu-item-selected {
-  background: var(--primary-color) !important;
-  color: var(--text-primary) !important;
-}
-
-/* Tables */
-.ant-table {
-  background: var(--bg-secondary) !important;
-  color: var(--text-primary);
-}
-
-.ant-table-thead > tr > th {
-  background: var(--bg-elevated) !important;
-  color: var(--text-primary);
-  font-weight: 700;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.ant-table-tbody > tr > td {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.ant-table-tbody > tr:hover > td {
-  background: var(--bg-hover) !important;
-}
-
-/* Forms */
-.ant-form-item-label > label {
-  color: var(--text-primary);
-}
-
-.ant-input {
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-}
-
-.ant-input:hover,
-.ant-input:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
-}
-
-.ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background: var(--bg-elevated) !important;
-  border-color: var(--border-color) !important;
-  color: var(--text-primary) !important;
-}
-
-/* Buttons */
-.ant-btn {
-  border-radius: 6px;
-  transition: var(--transition);
-}
-
-.ant-btn-primary {
-  background: var(--gradient-primary);
-  border: none;
-}
-
-.ant-btn-primary:hover {
-  background: var(--primary-hover);
-  transform: translateY(-1px);
-}
-
-/* Login Form */
-.login-form {
-  background: var(--bg-secondary);
-  padding: 32px;
-  border-radius: 12px;
-  box-shadow: var(--modal-shadow);
-}
-
-.login-form button[type='submit'] {
-  margin-bottom: 20px;
-  background: var(--gradient-primary);
-  border: none;
-}
-
-.login-form-forgot {
-  color: var(--primary-color);
-}
-
-.login-form-button {
-  width: 100%;
-}
-
-/* Typography */
-.ant-typography {
-  color: var(--text-primary);
-}
-
-.ant-typography strong {
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-primary) !important;
-  font-weight: 700 !important;
-}
-
-/* Tabs */
-.ant-tabs-tab {
-  color: var(--text-secondary);
-}
-
-.ant-tabs-tab:hover {
-  color: var(--primary-color);
-}
-
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: var(--primary-color);
-}
-
-.ant-tabs-ink-bar {
-  background: var(--primary-color);
-}
-
-/* Dropdown */
 .headerIcon .ant-dropdown-menu {
-  border-radius: 8px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--card-shadow);
+  border-radius: 6px;
+  background: none;
+  padding: 0;
+  box-shadow: none;
 }
-
-.headerIcon .ant-dropdown-menu-item {
-  color: var(--text-primary);
-  transition: var(--transition);
-}
-
 .headerIcon .ant-dropdown-menu-item:hover,
 .headerIcon .ant-dropdown-menu-item.ant-dropdown-menu-item-active {
-  background: var(--bg-hover);
-  color: var(--text-primary);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .ant-layout-sider {
-    background: var(--bg-secondary) !important;
-  }
-  
-  .tabContent .ant-tabs-right > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
-    padding-right: 0;
-    margin-top: 30px;
-  }
-  
-  .tabContent .ant-tabs {
-    display: block;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.ant-card,
-.ant-modal,
-.ant-drawer-content {
-  animation: fadeIn 0.3s ease-out;
+  background: none;
 }
 
 .App {
@@ -214,6 +26,32 @@ h1, h2, h3, h4, h5, h6 {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.login-form button[type='submit'] {
+  margin-bottom: 20px;
+}
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 700;
+}
+.ant-typography strong {
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
 }
 
 .ant-menu-inline {
@@ -236,6 +74,18 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+.ant-menu-item {
+  height: 36px !important;
+}
+@media (max-width: 768px) {
+  .tabContent .ant-tabs-right > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  .tabContent .ant-tabs {
+    display: block;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
