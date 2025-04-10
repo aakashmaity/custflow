@@ -35,7 +35,7 @@ const mail = async (req, res) => {
 
     const htmlContent = SendInvoice({
       title: 'Your Invoice from Custflow',
-      name: client?.name,
+      clientName: client?.name,
       time: new Date().toLocaleString(),
       jsondata,
     });
