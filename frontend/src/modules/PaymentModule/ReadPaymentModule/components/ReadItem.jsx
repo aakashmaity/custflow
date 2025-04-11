@@ -105,9 +105,9 @@ export default function ReadItem({ config, selectedItem }) {
             key={`${uniqueId()}`}
             loading={mailInProgress}
             onClick={() => {
-              console.log("currenterp: ",currentErp)
-              console.log("client: ", client)
-              send(currentErp._id);
+              // console.log("currenterp: ",currentErp)
+              // console.log("client: ", client)
+              send(currentErp._id, currentErp);
             }}
             icon={<MailOutlined />}
           >
