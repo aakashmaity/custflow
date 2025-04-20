@@ -124,7 +124,7 @@ let routes = {
       element: <Profile />,
     },
     {
-      path: '*',
+      path: '/*',
       element: <NotFound />,
     },
   ],
