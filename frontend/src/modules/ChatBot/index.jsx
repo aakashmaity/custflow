@@ -7,7 +7,7 @@ function ChatBot() {
 
   const bootpress_client_id = import.meta.env.VITE_BOOTPRESS_CLIENT_ID;
 
-  console.log("client: ", bootpress_client_id)
+  // console.log("client: ", bootpress_client_id)
   const toggleWebchat = () => {
     setIsWebchatOpen((prevState) => !prevState)
   }
