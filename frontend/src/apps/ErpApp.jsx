@@ -10,6 +10,8 @@ import { settingsAction } from '@/redux/settings/actions';
 import { selectSettings } from '@/redux/settings/selectors';
 import AppRouter from '@/router/AppRouter';
 import useResponsive from '@/hooks/useResponsive';
+import ChatBot from '@/modules/ChatBot';
+
 
 
 export default function ErpCrmApp() {
@@ -56,6 +58,7 @@ export default function ErpCrmApp() {
               }}
             >
               <AppRouter />
+              <ChatBot/>
             </Content>
           </Layout>
         ) : (
@@ -71,6 +74,7 @@ export default function ErpCrmApp() {
               }}
             >
               <AppRouter />
+              <ChatBot/>
             </Content>
           </Layout>
         )}

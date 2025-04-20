@@ -13,7 +13,7 @@ const asyncFilter = (entity, options) => {
   return request.filter({ entity, options });
 };
 
-const MultiStepSelectAsync = ({
+function MultiStepSelectAsync ({
   firstSelectProps = {},
   secondSelectProps = {},
   firstSelectIdKey = '_id',
@@ -27,7 +27,7 @@ const MultiStepSelectAsync = ({
   value = {},
   onChange,
   style,
-}) => {
+}) {
   const firstSelectedOption = value.firstSelectedOption;
   const [firstSelectOptions, setFirstSelectOptions] = useState([]);
   const [secondSelectOptions, setSecondSelectOptions] = useState([]);

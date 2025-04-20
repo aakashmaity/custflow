@@ -121,24 +121,29 @@ export default function DataTable({ config, extra = [] }) {
                 case 'edit':
                   handleEdit(record);
                   break;
-
                 case 'delete':
                   handleDelete(record);
                   break;
                 case 'updatePassword':
                   handleUpdatePassword(record);
                   break;
-
                 default:
                   break;
               }
-              // else if (key === '2')handleCloseTask
             },
           }}
           trigger={['click']}
         >
           <EllipsisOutlined
-            style={{ cursor: 'pointer', fontSize: '24px' }}
+            style={{
+              cursor: 'pointer',
+              fontSize: '24px',
+              position: 'absolute',
+              top: '16px',
+              right: '16px',
+              color: '#888',
+              zIndex: 2
+            }}
             onClick={(e) => e.preventDefault()}
           />
         </Dropdown>

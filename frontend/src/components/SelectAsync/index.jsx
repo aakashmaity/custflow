@@ -7,7 +7,7 @@ import { generate as uniqueId } from 'shortid';
 import color from '@/utils/color';
 import useLanguage from '@/locale/useLanguage';
 
-const SelectAsync = ({
+function SelectAsync ({
   entity,
   displayLabels = ['name'],
   outputValue = '_id',
@@ -17,7 +17,7 @@ const SelectAsync = ({
   placeholder = 'select',
   value,
   onChange,
-}) => {
+}) {
   const translate = useLanguage();
   const [selectOptions, setOptions] = useState([]);
   const [currentValue, setCurrentValue] = useState(undefined);
