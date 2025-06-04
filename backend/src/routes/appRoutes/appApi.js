@@ -5,6 +5,9 @@ const router = express.Router();
 const appControllers = require('@/controllers/appControllers');
 const { routesList } = require('@/models/utils');
 
+// Add the new data route
+// router.route('/data/all').get(catchErrors(appControllers.dataAggregatorController.getAllData));
+
 const routerApp = (entity, controller) => {
   router.route(`/${entity}/create`).post(catchErrors(controller['create']));
   router.route(`/${entity}/read/:id`).get(catchErrors(controller['read']));

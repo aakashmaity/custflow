@@ -9,6 +9,8 @@ const controllerDirectories = globSync(pattern).map((filePath) => {
   return path.basename(filePath);
 });
 
+// const dataAggregatorController = require('./dataAggregatorController');
+
 const appControllers = () => {
   const controllers = {};
   const hasCustomControllers = [];
@@ -35,4 +37,7 @@ const appControllers = () => {
   return controllers;
 };
 
-module.exports = appControllers();
+module.exports = {
+  ...appControllers(),
+  // dataAggregatorController
+};
