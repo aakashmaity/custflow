@@ -23,21 +23,9 @@
   <img src="https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=white" />
   <img src="https://img.shields.io/badge/Lodash-3492FF?style=flat" />
   <img src="https://img.shields.io/badge/JWT-black?style=flat&logo=JSON%20web%20tokens" />
-  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat" />
   <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
 </p>
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
 
 ---
 
@@ -63,7 +51,7 @@ This project simplifies the complexities of ERP and CRM management, enabling dev
 
 This project requires the following dependencies:
 
-- **Programming Language**: JavaScript  
+- **Programming Language**: JavaScript
 - **Package Manager**: npm
 
 ---
@@ -79,15 +67,14 @@ git clone https://github.com/aakashmaity/custflow
 # Navigate to the project root
 cd custflow
 
-# Install dependencies at root
+# Start the backend Terminal - 1
+cd backend
 npm install
+npm run dev
 
-# Start the frontend
+# Start the frontend Terminal - 2
 cd frontend
 npm install
 npm run dev
 
-# Start the backend
-cd ../backend
-npm install
-npm run dev
+
