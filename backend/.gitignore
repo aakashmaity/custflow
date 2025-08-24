@@ -8,3 +8,6 @@ notes.md
 
 *.pdf
 .vscode
+
+.prettierrc
+.prettierignore
